@@ -7,9 +7,12 @@ from ...utils import (
 
 
 _import_structure = {"pipeline_ddpm": ["DDPMPipeline"]}
+_import_structure.update({"custom_pipeline_ddpm": ["ConditionalDDPMPipeline"]}) # 추가
+
 
 if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
     from .pipeline_ddpm import DDPMPipeline
+    from .custom_pipeline_ddpm import ConditionalDDPMPipeline # 추가
 
 else:
     import sys

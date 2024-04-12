@@ -120,6 +120,7 @@ else:
             "DanceDiffusionPipeline",
             "DDIMPipeline",
             "DDPMPipeline",
+            "ConditionalDDPMPipeline", # 추가
             "DiffusionPipeline",
             "DiTPipeline",
             "ImagePipelineOutput",
@@ -510,6 +511,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             BlipDiffusionPipeline,
             CLIPImageProjection,
             ConsistencyModelPipeline,
+            ConditionalDDPMPipeline, # 추가
             DanceDiffusionPipeline,
             DDIMPipeline,
             DDPMPipeline,
